@@ -40,8 +40,8 @@ jobs:
     with:
       version: ${{ needs.Compute_Version.outputs.version }}
 
-  Build_Windows_Installer:
-    needs: [Build_v2rayA_Binaries, Compute_Version]
-    uses: ./.github/workflows/_build_windows_installer.yml
-    with:
-      version: ${{ needs.Compute_Version.outputs.version }}
+  #Build_Windows_Installer:
+  #  needs: [Build_v2rayA_Binaries, Compute_Version]
+  #  uses: ./.github/workflows/_build_windows_installer.yml
+  #  with:
+  #    version: ${{ needs.Compute_Version.outputs.version }}
